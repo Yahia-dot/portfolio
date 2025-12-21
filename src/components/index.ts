@@ -1,0 +1,7 @@
+export { Navbar } from './Navbar'
+export { Hero } from './Hero'
+export { ProjectsSection } from './ProjectsSection'
+export { ContactSection } from './ContactSection'
+export { Footer } from './Footer'
+export { ProjectCard } from './ProjectCard'
+export { ImageGallery } from './ImageGallery'

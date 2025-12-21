@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+:root {
+  /* Warm Amber & Dark Wood Theme Colors */
+  --color-amber-50: #FFFBF5;
+  --color-amber-100: #FFF4E0;
+  --color-amber-200: #FFE4B8;
+  --color-amber-300: #FFD18A;
+  --color-amber-400: #FFB84D;
+  --color-amber-500: #FF9F1C;
+  --color-amber-600: #E68A00;
+  --color-amber-700: #B36B00;
+  --color-amber-800: #804D00;
+  --color-amber-900: #4D2E00;
+  --color-amber-950: #331F00;
+
+  --color-wood-50: #F5F3F0;
+  --color-wood-100: #E8E3DC;
+  --color-wood-200: #D4C9BA;
+  --color-wood-300: #B8A894;
+  --color-wood-400: #9A8470;
+  --color-wood-500: #7A6555;
+  --color-wood-600: #5E4D3F;
+  --color-wood-700: #463930;
+  --color-wood-800: #2E2520;
+  --color-wood-900: #1C1612;
+  --color-wood-950: #0F0C09;
+
+  /* Warm Nighttime Workspace Theme Variables */
+  --background: 30 40% 8%; /* Deep Wood - #1C1612 */
+  --foreground: 0 0% 100%; /* Pure White - #FFFFFF */
+
+  /* Primary - Dark Wood Background */
+  --primary: 30 40% 8%; /* Deep Wood - #1C1612 */
+  --primary-foreground: 0 0% 100%; /* White on dark wood */
+
+  /* Secondary - Warm Amber Accent */
+  --secondary: 38 100% 56%; /* Warm Amber - #FF9F1C */
+  --secondary-foreground: 30 40% 8%; /* Dark wood on amber */
+
+  /* Accent - Golden Amber for Actions */
+  --accent: 38 100% 56%; /* Warm Amber - #FF9F1C */
+  --accent-foreground: 30 40% 8%; /* Dark wood on amber */
+
+  /* Muted - Warm gray for secondary text */
+  --muted: 30 35% 18%; /* Medium wood shade */
+  --muted-foreground: 30 15% 65%; /* Warm gray - #ADA399 */
+
+  /* Card - Slightly lighter wood */
+  --card: 30 38% 12%; /* Lighter wood for cards */
+  --card-foreground: 0 0% 100%; /* White text on cards */
+
+  --popover: 30 38% 12%;
+  --popover-foreground: 0 0% 100%;
+
+  --destructive: 0 70% 55%; /* Soft red for errors */
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 30 30% 25%; /* Lighter wood for borders */
+  --input: 30 40% 10%; /* Dark wood for inputs */
+  --ring: 38 100% 56%; /* Amber focus ring */
+  --radius: 0.75rem; /* Rounded corners - 12px */
+
+  /* Wood & Amber gradient variables */
+  --gradient-primary: linear-gradient(135deg, hsl(30 40% 8%) 0%, hsl(30 38% 12%) 100%);
+  --gradient-accent: linear-gradient(135deg, hsl(38 100% 56%) 0%, hsl(38 100% 62%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(30 40% 6%) 0%, hsl(30 40% 8%) 50%, hsl(30 38% 12%) 100%);
+
+  /* Warm shadow variables */
+  --shadow-elegant: 0 8px 30px -6px hsla(30 40% 3% / 0.7);
+  --shadow-accent: 0 6px 24px -4px hsla(38 100% 56% / 0.4);
+  --shadow-card: 0 4px 16px -3px hsla(30 40% 3% / 0.6);
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Warm Dark Wood Background - Deep with subtle gradient */
+  background: linear-gradient(135deg, #1C1612 0%, #231E18 50%, #151210 100%);
+  position: relative;
+}
+
+/* Subtle warm amber glow overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 20% 80%, hsla(38 100% 56% / 0.08) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, hsla(38 100% 56% / 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure all content sits above the overlay */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography Conventions */
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+}
+
+button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Custom Scrollbar Styling - Wood & Amber Theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(30 40% 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(38 100% 56%);
+  border-radius: 6px;
+  border: 2px solid hsl(30 40% 10%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(38 100% 62%); /* Brighter amber on hover */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(38 100% 56%) hsl(30 40% 10%);
+}
