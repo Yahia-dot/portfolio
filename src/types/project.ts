@@ -9,7 +9,6 @@ export interface Project {
   githubUrl?: string
   year: string
   role: string
-  duration: string
   highlights: string[]
   featured?: boolean
 }

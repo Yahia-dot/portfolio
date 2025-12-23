@@ -81,10 +81,6 @@ export function ProjectDetails() {
                 <span className="text-wood-400">Year:</span>
                 <span className="text-amber-300 font-mono">{project.year}</span>
               </div>
-              <div className="flex items-center gap-2 text-wood-300">
-                <span className="text-wood-400">Duration:</span>
-                <span className="text-amber-300 font-mono">{project.duration}</span>
-              </div>
             </div>
           </div>
         </div>

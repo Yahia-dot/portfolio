@@ -71,15 +71,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <span className="text-amber-200/60 text-sm font-mono">{project.year}</span>
         </div>
 
-        {/* Role & Duration */}
-        <div className="flex gap-4 mb-4 text-xs text-wood-300">
+        {/* Role */}
+        <div className="mb-4 text-xs text-wood-300">
           <span className="flex items-center gap-1">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
             {project.role}
-          </span>
-          <span className="flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-            {project.duration}
           </span>
         </div>
 

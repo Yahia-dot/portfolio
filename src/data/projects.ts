@@ -16,7 +16,6 @@ export const projects: Project[] = [
     ],
     year: '2025',
     role: 'Full-Stack Developer & QA Engineer',
-    duration: '6 months',
     featured: true,
     highlights: [
       'Built comprehensive testing platform for EV charging infrastructure',
@@ -39,7 +38,6 @@ export const projects: Project[] = [
     ],
     year: '2024',
     role: 'Full-Stack Developer',
-    duration: '4 months',
     highlights: [
       'Created interactive visualization tool for complex research datasets',
       'Integrated MySQL database with React frontend for real-time data display',
@@ -67,7 +65,6 @@ export const projects: Project[] = [
     ],
     year: '2025',
     role: 'Full-Stack Developer',
-    duration: '6 months',
     highlights: [
       'Built a full-stack e-commerce project from scratch to improve end-to-end development skills',
       'Planned and implemented the complete application architecture independently',
@@ -94,7 +91,6 @@ export const projects: Project[] = [
     ],
     year: '2024',
     role: 'Android Developer',
-    duration: '3 months',
     highlights: [
       'Built real-time multiplayer game with Firebase Realtime Database',
       'Implemented modern UI using Jetpack Compose with Material Design',
@@ -118,7 +114,6 @@ export const projects: Project[] = [
     ],
     year: '2024',
     role: 'iOS Developer',
-    duration: '4 months',
     highlights: [
       'Developed personalized workout and nutrition tracking system',
       'Integrated external APIs for enhanced fitness data accuracy',
