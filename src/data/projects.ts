@@ -113,6 +113,8 @@ export const projects: Project[] = [
       new URL('../assets/projects/IOS/1.png', import.meta.url).href,
       new URL('../assets/projects/IOS/2.png', import.meta.url).href,
       new URL('../assets/projects/IOS/3.png', import.meta.url).href,
+      new URL('../assets/projects/IOS/4.png', import.meta.url).href,
+      new URL('../assets/projects/IOS/5.png', import.meta.url).href,
     ],
     year: '2024',
     role: 'iOS Developer',

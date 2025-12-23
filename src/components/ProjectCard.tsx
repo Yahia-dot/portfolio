@@ -13,6 +13,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const navigate = useNavigate()
 
   const handleClick = () => {
+    window.scrollTo(0, 0)
     navigate(`/project/${project.id}`)
   }
 

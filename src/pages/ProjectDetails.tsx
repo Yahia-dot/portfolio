@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { getProjectById } from '@/data'
 import { Navbar, ImageGallery } from '@/components'
 import { ChevronLeftIcon, ChevronRightIcon, BackIcon } from '@/components/icons'
@@ -11,6 +11,11 @@ export function ProjectDetails() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isGalleryOpen, setIsGalleryOpen] = useState(false)
   const [galleryStartIndex, setGalleryStartIndex] = useState(0)
+
+  // Scroll to top when component mounts or project changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [id])
 
   if (!project) {
     return (
