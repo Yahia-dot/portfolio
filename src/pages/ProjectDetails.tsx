@@ -184,19 +184,6 @@ export function ProjectDetails() {
                 <h2 className="text-2xl font-bold text-amber-400 mb-4">About This Project</h2>
                 <p className="text-wood-100 leading-relaxed">{project.fullDescription}</p>
               </div>
-
-              {/* Key Highlights */}
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-8">
-                <h2 className="text-2xl font-bold text-amber-400 mb-6">Key Highlights</h2>
-                <ul className="space-y-3">
-                  {project.highlights.map((highlight, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0"></span>
-                      <span className="text-wood-100">{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
 
             {/* Sidebar */}

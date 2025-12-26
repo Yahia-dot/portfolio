@@ -17,13 +17,6 @@ export const projects: Project[] = [
     year: '2025',
     role: 'Full-Stack Developer & QA Engineer',
     featured: true,
-    highlights: [
-      'Built comprehensive testing platform for EV charging infrastructure',
-      'Implemented integration, end-to-end, and performance testing suites',
-      'Containerized entire testing environment with Docker',
-      'Deployed automated CI/CD pipelines using GitHub Actions and AWS',
-      'Achieved reliable testing infrastructure with agile methodology',
-    ],
   },
   {
     id: 'urban-research',
@@ -38,14 +31,6 @@ export const projects: Project[] = [
     ],
     year: '2024',
     role: 'Full-Stack Developer',
-    highlights: [
-      'Created interactive visualization tool for complex research datasets',
-      'Integrated MySQL database with React frontend for real-time data display',
-      'Integrated geolocation data with heatmap visualization for spatial analysis',
-      'Implemented Docker containerization for consistent deployment',
-      'Automated deployment pipeline with GitHub Actions',
-      'Enabled researchers to explore built environment and human behavior data',
-    ],
   },
   {
     id: 'ecommerce-platform',
@@ -65,16 +50,6 @@ export const projects: Project[] = [
     ],
     year: '2025',
     role: 'Full-Stack Developer',
-    highlights: [
-      'Built a full-stack e-commerce project from scratch to improve end-to-end development skills',
-      'Planned and implemented the complete application architecture independently',
-      'Strengthened understanding of frontend and backend integration using modern frameworks',
-      'Gained hands-on experience with database design, authentication, and payment flows',
-      'Applied TypeScript to build structured and maintainable application logic',
-      'Improved UI development skills with responsive and reusable components',
-      'Learned to manage a project through the full development lifecycle',
-      'Used Docker to ensure consistent development and deployment environments',
-    ],
   },
   {
     id: 'multiplayer-battleship',
@@ -91,19 +66,12 @@ export const projects: Project[] = [
     ],
     year: '2024',
     role: 'Android Developer',
-    highlights: [
-      'Built real-time multiplayer game with Firebase Realtime Database',
-      'Implemented modern UI using Jetpack Compose with Material Design',
-      'Developed game logic for classic Battleship gameplay',
-      'Created user authentication and data synchronization system',
-      'Optimized for smooth performance on various Android devices',
-    ],
   },
   {
     id: 'workout-nutrition-tracker',
     title: 'Workout & Nutrition Tracker',
     shortDescription: 'iOS app for tracking workouts and nutrition with personalized routines and meal plans.',
-    fullDescription: 'A comprehensive iOS application developed as part of the iOS Development course at Jönköping University, where the project received a top grade. The app helps users track workouts and nutrition plans by creating personalized routines, logging progress, and monitoring performance over time. It integrates external APIs for enhanced functionality and uses SwiftData for efficient local data persistence, following iOS development best practices.',
+    fullDescription: 'A comprehensive iOS application developed as part of the iOS Development course at Jönköping University, where the project received a top grade. The app helps users track workouts and nutrition plans, logging progress, and monitoring performance over time. It integrates external APIs for enhanced functionality and uses SwiftData for efficient local data persistence, following iOS development best practices.',
     tags: ['Swift', 'SwiftData', 'APIs'],
     images: [
       new URL('../assets/projects/IOS/1.png', import.meta.url).href,
@@ -114,13 +82,6 @@ export const projects: Project[] = [
     ],
     year: '2024',
     role: 'iOS Developer',
-    highlights: [
-      'Developed personalized workout and nutrition tracking system',
-      'Integrated external APIs for enhanced fitness data accuracy',
-      'Implemented SwiftData for efficient local data management',
-      'Created intuitive UI for logging gym progress and meal plans',
-      'Built performance monitoring and progress visualization features',
-    ],
   },
 ]
 

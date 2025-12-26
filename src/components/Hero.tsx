@@ -23,7 +23,7 @@ export function Hero() {
     >
       {/* Dark overlay for better text readability */}
       <motion.div
-        className="absolute inset-0 bg-black/40"
+        className="absolute inset-0 bg-black/10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
