@@ -34,9 +34,9 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={socialLinks[0].ariaLabel}
-              className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 hover:border-amber-500 flex items-center justify-center transition-all duration-300"
+              className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center transition-all duration-300 hover:bg-amber-500 group"
             >
-              <div className="text-amber-400">
+              <div className="text-white transition-colors duration-300 group-hover:text-wood-900">
                 <GitHubIcon />
               </div>
             </a>
@@ -45,9 +45,9 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={socialLinks[1].ariaLabel}
-              className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 hover:border-amber-500 flex items-center justify-center transition-all duration-300"
+              className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center transition-all duration-300 hover:bg-amber-500 group"
             >
-              <div className="text-amber-400">
+              <div className="text-white transition-colors duration-300 group-hover:text-wood-900">
                 <LinkedInIcon />
               </div>
             </a>
