@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import resumePDF from '@/assets/YahiaAlaliCVSwe..pdf'
+import resumePDF from '@/assets/YahiaAlaliCVSwe.pdf'
 import { MailIcon, MapPinIcon, SendIcon, DownloadIcon } from './icons'
 
 export function ContactSection() {
