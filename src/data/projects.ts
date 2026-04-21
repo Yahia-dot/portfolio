@@ -2,6 +2,22 @@ import type { Project } from '@/types/project'
 
 export const projects: Project[] = [
   {
+  id: 'ai-anomaly-analytics',
+  title: 'AI Anomaly Analytics',
+  shortDescription: 'Full-stack analytics platform for detecting and explaining anomalies in smart meter energy consumption data using deep learning.',
+  fullDescription: 'A thesis research platform built wiith calibration with Jönköping Energi to train, evaluate, and interpret an autoencoder-based anomaly detection model on real-world smart meter data. The system ingests 15-minute interval electricity consumption readings, applies statistical and bootstrapping-based data cleaning, and trains a deep learning autoencoder to flag abnormal consumption windows. A React frontend exposes three core workflows: a Training page for configuring and monitoring model training in real time, a Testing page for running detection across meter fleets with anomaly type classification (e.g. Cyclic Load, Flat Line, Spike), and an Explainability page powered by SHAP KernelExplainer to attribute reconstruction error to specific 15-minute timesteps. All runs are persisted in a SQLite database and surfaced through a Dashboard with historical run comparison. Built as part of a Computer Engineering thesis at Jönköping University.',
+  tags: ['Python', 'FastAPI', 'PyTorch', 'SHAP', 'React', 'TypeScript', 'SQLite', 'SQLAlchemy', 'Tailwind CSS', 'Vite'],
+  images: [
+    new URL('../assets/projects/AiAnomalyAnalytics/1.png', import.meta.url).href,
+    new URL('../assets/projects/AiAnomalyAnalytics/2.png', import.meta.url).href,
+    new URL('../assets/projects/AiAnomalyAnalytics/3.png', import.meta.url).href,
+  ],
+  year: '2026',
+  role: 'Full-Stack Developer & ML Engineer',
+  featured: true,
+},
+
+  {
     id: 'stimulator',
     title: 'Stimulator',
     shortDescription: 'Web-based testing and evaluation platform for FlexiCharge (Electric Vehicle charging system).',
@@ -16,7 +32,22 @@ export const projects: Project[] = [
     ],
     year: '2025',
     role: 'Full-Stack Developer & QA Engineer',
-    featured: true,
+  },
+  
+  {
+    id: 'traybot',
+    title: 'TrayBot : Autonomous Tray Carrier Robot',
+    shortDescription: 'Autonomous hospital and office tray carrier robot built in collaboration with Husqvarna Group, featuring AI-powered obstacle classification and a real-time mobile control app.',
+    fullDescription: 'An autonomous tray carrier robot developed as part of the Autonomous Robots course at Jönköping University in collaboration with Husqvarna Group. Led a 9-member cross-functional team as Team Leader, coordinating three independent development layers: a Raspberry Pi robot layer communicating with the Husqvarna mower platform over a TCP socket, a FastAPI backend with SQLite database and Google Cloud Vision AI for obstacle classification, and a React Native mobile app for real-time dispatch, live corridor map, and incident logging. Managed the full Agile Scrum process including sprint planning, GitHub project board, feature branch workflow, Pull Request reviews, and all team ceremonies. Defined API contracts across layers to enable parallel development and ensure on-time delivery against hard project deadlines.',
+    tags: ['Python', 'FastAPI', 'React Native', 'TypeScript', 'SQLite', 'Google Vision API', 'Raspberry Pi', 'SQLAlchemy', 'Expo', 'GitHub Actions'],
+    images: [
+      new URL('../assets/projects/TrayBot/1.png', import.meta.url).href,
+      new URL('../assets/projects/TrayBot/2.png', import.meta.url).href,
+      new URL('../assets/projects/TrayBot/3.png', import.meta.url).href,
+      new URL('../assets/projects/TrayBot/4.png', import.meta.url).href,
+    ],
+    year: '2026',
+    role: 'Team Leader & Full-Stack Developer',
   },
   {
     id: 'urban-research',
